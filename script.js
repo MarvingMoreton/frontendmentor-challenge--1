@@ -28,6 +28,7 @@ const ratingCard = document.querySelector(`
 .ratingCard`);
 
 const thankYouScreen = document.querySelector(`.thankYouScreen`);
+const paragraphText = document.querySelector(`.printed-rating`);
 
 let rating;
 
