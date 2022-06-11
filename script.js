@@ -20,7 +20,7 @@ B) When submit and rate selected go to screen 2
 */
 
 // 1) DOM selection
-const currentRating = document.querySelectorAll(`.rating`);
+const ratingElements = document.querySelectorAll(`.rating`);
 
 const submitRate = document.querySelector(`.btn`);
 
@@ -30,22 +30,40 @@ const ratingCard = document.querySelector(`
 const thankYouScreen = document.querySelector(`.thankYouScreen`);
 const paragraphText = document.querySelector(`.printed-rating`);
 
+const form = document.querySelector(`form`);
+
 let rating;
 
 // 2) rating function
-
-currentRating.forEach(function (rate) {
-  rate.addEventListener(`click`, function () {
-    currentRating.forEach(function (currentRating) {
-      if (rate === currentRating) {
-        currentRating.classList.add(`rating-active`);
-      } else {
-        currentRating.classList.remove(`rating-active`);
+for (const ratingElement of ratingElements) {
+  ratingElement.addEventListener(`click`, function () {
+    const activeRating = document.querySelector(`.rating-active`);
+    if (ratingElement === activeRating) {
+      ratingElement.classList.remove(`rating-active`);
+    } else {
+      ratingElement.classList.add(`rating-active`);
+      if (activeRating) {
+        activeRating.classList.remove(`rating-active`);
       }
-    });
-    rating = Number(rate.textContent);
+      rating = ratingElement.textContent;
+      console.log(rating);
+    }
   });
-});
+}
+
+// 2) with Foreach
+// ratingElements.forEach(function (rate) {
+//   rate.addEventListener(`click`, function () {
+//     ratingElements.forEach(function (ratingElements) {
+//       if (rate === ratingElements) {
+//         ratingElements.classList.add(`rating-active`);
+//       } else {
+//         ratingElements.classList.remove(`rating-active`);
+//       }
+//     });
+//     rating = Number(rate.textContent);
+//   });
+// });
 
 // 3) Submit effects
 
@@ -58,3 +76,7 @@ submitRate.addEventListener("click", function () {
     paragraphText.textContent = `You have selected ${rating} out of 5`;
   }
 });
+
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+// });
