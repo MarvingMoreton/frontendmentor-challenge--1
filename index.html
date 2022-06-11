@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Javascript -->
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor & Marving.io | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Screen 1 -->
+    <div class="container ratingCard">
+      <div class="icon-box">
+        <img class="icon-star" src="images/icon-star.svg" alt="" />
+      </div>
+
+      <div class="main-box">
+        <h1 class="title">How did we do?</h1>
+        <p class="main-paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="ratings">
+          <div class="rating">1</div>
+          <div class="rating">2</div>
+          <div class="rating">3</div>
+          <div class="rating">4</div>
+          <div class="rating">5</div>
+        </div>
+        <form action="">
+          <button class="btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Second creen here -->
+
+    <div class="container thankYouScreen inactive">
+      <div class="main-box grid">
+        <div class="img-box">
+          <img src="images/illustration-thank-you.svg" alt="" />
+        </div>
+
+        <div class="printed-rating"></div>
+        <h2 class="title">Thank you!</h2>
+        <p class="main-paragraph--screen--2">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Marving</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/**************************/
+/*  BACKBONE */
+/**************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
+  background-color: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+h1 {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+H2 {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: hsl(217, 12%, 63%);
+  line-height: 2rem;
+}
+
+/**************************/
+/*  COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 32.5rem;
+  margin: 15rem auto;
+  /* background-color: hsl(213, 19%, 18%); */
+  background-image: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(207, 17%, 12%)
+  );
+
+  padding: 2rem;
+
+  border-radius: 1.5rem;
+}
+
+.icon-box {
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 25%);
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-star {
+  padding: 0.5rem;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.main-box {
+  margin-right: 1rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+.main-paragraph {
+  margin-bottom: 3rem;
+}
+.ratings {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(217, 12%, 63%);
+  /* align-items: center; */
+}
+
+.rating {
+  background-color: hsl(213, 19%, 25%);
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.rating-active {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  width: 100%;
+  margin: 2rem auto O auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(216, 12%, 8%);
+}
+
+/* Screen 2 */
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.your-rating {
+  margin-bottom: 3.5rem;
+  border-radius: 20rem;
+  background-color: hsl(213, 19%, 25%);
+  padding: 0.5rem;
+  width: 50%;
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+}
+
+.main-paragraph--screen--2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.inactive {
+  display: none;
+}
