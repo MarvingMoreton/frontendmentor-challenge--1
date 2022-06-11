@@ -116,6 +116,14 @@ p {
   color: hsl(0, 0%, 100%);
 }
 
+.btn:disabled {
+  background-color: hsl(216, 12%, 54%);
+}
+/* .btn:disabled:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+} */
+
 .btn {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
@@ -162,6 +170,8 @@ p {
   padding: 0.5rem;
   width: 50%;
   text-align: center;
+  font-size: 1rem;
+  font-family: "overpass", sans-serif;
   color: hsl(25, 97%, 53%);
 }
 
