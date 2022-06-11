@@ -53,7 +53,7 @@ submitRate.addEventListener("click", function () {
     alert("Be kind as selecting a rating before submitting");
   } else {
     ratingCard.classList.add("inactive");
-    // thankYouScreen.classList.remove("inactive");
-    // paragraphText.textContent = `You have selected ${rating} out of 5`;
+    thankYouScreen.classList.remove("inactive");
+    paragraphText.textContent = `You have selected ${rating} out of 5`;
   }
 });
